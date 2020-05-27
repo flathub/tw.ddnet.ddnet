@@ -38,6 +38,8 @@ modules:
           - rm -rf ddnet-libs
       - type: patch
         path: ddnet-set-data-dir.patch
+      - type: patch
+        path: 2217.patch
     modules:
       - shared-modules/glew/glew.json
       - shared-modules/glu/glu-9.json
