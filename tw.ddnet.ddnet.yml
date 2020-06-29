@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: "14.0.2"
-        commit: 1a87abe96b0f9c22f74b24f303416a533d9e9e19
+        tag: "14.0.3"
+        commit: d430fe2a308aeff5bcd48eae449a946b957ff43a
         disable-fsckobjects: true
 
       - type: shell
@@ -40,9 +40,6 @@ modules:
 
       - type: patch
         path: ddnet-set-data-dir.patch
-
-      - type: patch
-        path: ddnet-fix-appdata.patch
 
     modules:
       - shared-modules/glew/glew.json
