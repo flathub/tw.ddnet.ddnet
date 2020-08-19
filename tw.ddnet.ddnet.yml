@@ -30,8 +30,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: "14.3.2"
-        commit: 048bb992bbff2ffcb5443fc84d9ff2d70135d54d
+        tag: "14.4"
+        commit: b147950ef1d0074cddb0105c6898ef36f2234c6b
         disable-fsckobjects: true
 
       - type: shell
@@ -55,9 +55,9 @@ modules:
           - type: archive
             url: https://gitlab.gnome.org/GNOME/libnotify/-/archive/0.7.9/libnotify-0.7.9.tar.gz
             sha256: 9bd4f5fa911d27567e7cc2d2d09d69356c16703c4e8d22c0b49a5c45651f3af0
-      - name: opusfile
 
+      - name: opusfile
         sources:
           - type: archive
-            url: https://downloads.xiph.org/releases/opus/opusfile-0.11.tar.gz
-            sha256: 74ce9b6cf4da103133e7b5c95df810ceb7195471e1162ed57af415fabf5603bf
+            url: https://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz
+            sha256: 118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b
