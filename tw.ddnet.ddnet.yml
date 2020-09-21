@@ -27,6 +27,7 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DAUTOUPDATE=OFF
     sources:
       - type: git
