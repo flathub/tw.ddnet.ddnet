@@ -21,6 +21,7 @@ cleanup:
   - /lib/girepository-1.0
   - /lib/pkgconfig
   - /share/gir-1.0
+  - /share/doc
 modules:
   - name: ddnet
     buildsystem: cmake-ninja
