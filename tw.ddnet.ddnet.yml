@@ -33,8 +33,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: "15.2.2"
-        commit: ded742f5308102eda50d0d18d82368a45f334381
+        tag: "15.2.3"
+        commit: 64998b48d6f33171079a7934c698e24077f01518
         disable-fsckobjects: true
 
       - type: shell
