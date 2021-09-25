@@ -35,6 +35,7 @@ modules:
         url: https://github.com/ddnet/ddnet.git
         tag: "15.5.4"
         commit: bce5147aa590596e2431ed4e663acb54d528f4ad
+        # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
 
       - type: shell
