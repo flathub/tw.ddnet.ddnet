@@ -37,6 +37,9 @@ modules:
         commit: bce5147aa590596e2431ed4e663acb54d528f4ad
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
+        x-checker-data:
+          type: git
+          tag-pattern: ^([\d.]+)$
 
       - type: shell
         commands:
