@@ -1,6 +1,6 @@
 id: tw.ddnet.ddnet
 runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime-version: '21.08'
 sdk: org.freedesktop.Sdk
 default-branch: stable
 command: DDNet
@@ -33,8 +33,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: "15.5.4"
-        commit: bce5147aa590596e2431ed4e663acb54d528f4ad
+        tag: '15.6'
+        commit: 160e02b6519a3540285f2cb279827c83b25abbbc
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
         x-checker-data:
