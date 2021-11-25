@@ -33,8 +33,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: 15.6.2
-        commit: 4ab674d71ea8f908c32794fe76040c2530273c43
+        tag: '15.7'
+        commit: 7392c5f718df2e9a0bd54fc889c2a8bf62f48fe8
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
         x-checker-data:
