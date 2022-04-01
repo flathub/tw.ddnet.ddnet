@@ -68,3 +68,13 @@ modules:
           - type: archive
             url: https://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz
             sha256: 118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b
+
+      - name: x264
+        config-opts:
+          - --prefix=/app
+          - --disable-cli
+          - --enable-shared
+        sources:
+          - type: git
+            url: https://code.videolan.org/videolan/x264.git
+            commit: bfc87b7a330f75f5c9a21e56081e4b20344f139e
