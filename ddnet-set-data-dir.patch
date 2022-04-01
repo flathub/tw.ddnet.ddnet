@@ -1,10 +1,10 @@
 diff --git a/src/engine/shared/storage.cpp b/src/engine/shared/storage.cpp
-index b00529850..193526b1d 100644
+index 8de83e6a5..952e48fae 100644
 --- a/src/engine/shared/storage.cpp
 +++ b/src/engine/shared/storage.cpp
-@@ -5,6 +5,9 @@
- #include <engine/storage.h>
- #include "linereader.h"
+@@ -10,6 +10,9 @@
+ #include <stdlib.h>
+ #endif
  
 +// compiled-in data-dir path
 +#define DATA_DIR "/app/share/ddnet/data"
