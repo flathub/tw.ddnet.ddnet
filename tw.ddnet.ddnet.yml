@@ -9,9 +9,9 @@ finish-args:
   - --persist=.teeworlds
   - --share=ipc
   - --share=network
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --socket=wayland
-  - --socket=x11
   - --talk-name=org.freedesktop.Notifications
 rename-desktop-file: ddnet.desktop
 rename-icon: ddnet
@@ -33,8 +33,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '16.4'
-        commit: 838e49dde374518c13bd1b2bbb58fe454c7d547c
+        tag: '16.5'
+        commit: 6ea1eb18b5e6052369f5f3fb77a64f830b0b6624
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
         x-checker-data:
@@ -71,10 +71,9 @@ modules:
 
       - name: x264
         config-opts:
-          - --prefix=/app
           - --disable-cli
           - --enable-shared
         sources:
           - type: git
             url: https://code.videolan.org/videolan/x264.git
-            commit: bfc87b7a330f75f5c9a21e56081e4b20344f139e
+            commit: baee400fa9ced6f5481a728138fed6e867b0ff7f
