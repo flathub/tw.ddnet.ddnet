@@ -2,6 +2,8 @@ id: tw.ddnet.ddnet
 runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
 default-branch: stable
 command: DDNet
 finish-args:
@@ -26,6 +28,11 @@ modules:
   - name: ddnet
     buildsystem: cmake-ninja
     builddir: true
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      env:
+        CARGO_NET_OFFLINE: 'true'
+        CARGO_HOME: '/run/build/ddnet/cargo'
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DANTIBOT=ON
@@ -47,6 +54,11 @@ modules:
 
       - type: patch
         path: ddnet-set-data-dir.patch
+
+      - type: patch
+        path: cargo-use-vendored-sources.patch
+
+      - cargo-sources.json
 
     modules:
       - shared-modules/glew/glew.json
