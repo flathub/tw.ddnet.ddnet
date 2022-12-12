@@ -1,0 +1,25 @@
+From 3f73d01e20ba04ce07b9a804834702a819ccc1e0 Mon Sep 17 00:00:00 2001
+From: ElXreno <elxreno@gmail.com>
+Date: Mon, 12 Dec 2022 20:38:15 +0300
+Subject: [PATCH] cargo: use vendored sources
+
+---
+ .cargo/config.toml | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/.cargo/config.toml b/.cargo/config.toml
+index 040ecfaf8..dfba12377 100644
+--- a/.cargo/config.toml
++++ b/.cargo/config.toml
+@@ -1,2 +1,8 @@
+ [target.'cfg(target_env = "msvc")']
+ rustflags = ["-C", "target-feature=+crt-static"]
++
++[source.vendored-sources]
++directory = "cargo/vendor"
++
++[source.crates-io]
++replace-with = "vendored-sources"
+-- 
+2.38.1
+
