@@ -32,7 +32,7 @@ modules:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_NET_OFFLINE: 'true'
-        CARGO_HOME: '/run/build/ddnet/cargo'
+        CARGO_HOME: /run/build/ddnet/cargo
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DANTIBOT=ON
@@ -40,8 +40,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '16.6'
-        commit: 4364967742dd3c870551c42ea3c1ff11285ce7ec
+        tag: 16.7.1
+        commit: 750129c976343d54efb6690669dd2a3a04edb7df
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
         x-checker-data:
