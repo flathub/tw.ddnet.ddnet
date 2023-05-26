@@ -13,7 +13,6 @@ finish-args:
   - --share=network
   - --socket=fallback-x11
   - --socket=pulseaudio
-  - --socket=wayland
   - --talk-name=org.freedesktop.Notifications
 rename-desktop-file: ddnet.desktop
 rename-icon: ddnet
@@ -40,8 +39,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '16.9'
-        commit: f7809987c4820adc8eea0682e3695164277d1152
+        tag: '17.0'
+        commit: 1aa3c86fc7f0f2a80e554a555ec8f49984f06064
+        disable-submodules: true
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
         x-checker-data:
