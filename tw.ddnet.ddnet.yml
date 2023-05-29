@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '17.0'
-        commit: 1aa3c86fc7f0f2a80e554a555ec8f49984f06064
+        tag: 17.0.1
+        commit: 3a6d7330bf96f3f7490bab9988b78bdeafb145e3
         disable-submodules: true
         # https://github.com/ddnet/ddnet/issues/2196
         disable-fsckobjects: true
