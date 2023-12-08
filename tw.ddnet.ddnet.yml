@@ -35,7 +35,6 @@ modules:
         CARGO_HOME: /run/build/ddnet/cargo
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DANTIBOT=ON
       - -DAUTOUPDATE=OFF
     sources:
       - type: git
