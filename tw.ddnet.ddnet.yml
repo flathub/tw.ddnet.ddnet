@@ -17,7 +17,6 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
 rename-desktop-file: ddnet.desktop
 rename-icon: ddnet
-rename-appdata-file: ddnet.appdata.xml
 cleanup:
   - /include
   - /lib/girepository-1.0
