@@ -26,15 +26,17 @@ cleanup:
 modules:
   - name: ddnet
     buildsystem: cmake-ninja
-    builddir: true
     build-options:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_NET_OFFLINE: 'true'
         CARGO_HOME: /run/build/ddnet/cargo
     config-opts:
+      - -GNinja
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DAUTOUPDATE=OFF
+    post-install:
+      - install -Dm 644 -t /app/share/metainfo tw.ddnet.ddnet.metainfo.xml
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
@@ -56,6 +58,9 @@ modules:
 
       - type: patch
         path: cargo-use-vendored-sources.patch
+
+      - type: file
+        path: tw.ddnet.ddnet.metainfo.xml
 
       - cargo-sources.json
 
