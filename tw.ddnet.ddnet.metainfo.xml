@@ -3,8 +3,9 @@
     <id>tw.ddnet.ddnet</id>
     <metadata_license>CC-BY-SA-3.0</metadata_license>
     <project_license>Zlib</project_license>
-    <name>DDNet</name>
     <launchable type="desktop-id">tw.ddnet.ddnet.desktop</launchable>
+    <name>DDNet</name>
+    <developer_name>DDNet Team</developer_name>
     <summary>
         Hardest co-op 2D platformer ever
     </summary>
@@ -48,6 +49,7 @@
         <content_attribute id="social-chat">intense</content_attribute>
     </content_rating>
     <releases>
+        <release version="18.0.3" date="2024-02-03"/>
         <release version="18.0.2" date="2024-01-29"/>
         <release version="18.0.1" date="2024-01-22"/>
         <release version="18.0" date="2024-01-22"/>
