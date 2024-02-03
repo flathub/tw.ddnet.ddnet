@@ -3,8 +3,9 @@
     <id>tw.ddnet.ddnet</id>
     <metadata_license>CC-BY-SA-3.0</metadata_license>
     <project_license>Zlib</project_license>
-    <name>DDNet</name>
     <launchable type="desktop-id">tw.ddnet.ddnet.desktop</launchable>
+    <name>DDNet</name>
+    <developer_name>DDNet Team</developer_name>
     <summary>
         Hardest co-op 2D platformer ever
     </summary>
