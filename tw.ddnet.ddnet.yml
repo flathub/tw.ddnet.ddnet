@@ -10,8 +10,7 @@ finish-args:
   - --persist=.teeworlds
   - --share=ipc
   - --share=network
-  - --socket=wayland
-  - --socket=fallback-x11
+  - --socket=x11
   - --socket=pulseaudio
   - --talk-name=org.freedesktop.Notifications
 rename-desktop-file: ddnet.desktop
