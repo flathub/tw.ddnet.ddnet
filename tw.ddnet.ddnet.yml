@@ -71,10 +71,15 @@ modules:
         config-opts:
           - -Dman=false
           - -Dgtk_doc=false
+          - -Dtests=false
         sources:
           - type: archive
-            url: https://gitlab.gnome.org/GNOME/libnotify/-/archive/0.8.1/libnotify-0.8.1.tar.gz
-            sha256: 7c0b252edecbf08db50d775f9e720ecc03c742fb97c25f3966a8b7a4bedf8133
+            url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.7.tar.xz
+            sha256: 4be15202ec4184fce1ac15997ece5530d2be32fe9573875aeb10e3b573858748
+            x-checker-data:
+              project-id: 13149
+              type: anitya
+              url-template: https://download.gnome.org/sources/libnotify/$major.$minor/libnotify-$version.tar.xz
 
       - name: opusfile
         sources:
