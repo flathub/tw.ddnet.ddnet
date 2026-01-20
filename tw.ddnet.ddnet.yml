@@ -66,21 +66,6 @@ modules:
 
       - shared-modules/glu/glu-9.json
 
-      - name: libnotify
-        buildsystem: meson
-        config-opts:
-          - -Dman=false
-          - -Dgtk_doc=false
-          - -Dtests=false
-        sources:
-          - type: archive
-            url: https://download.gnome.org/sources/libnotify/0.8/libnotify-0.8.8.tar.xz
-            sha256: 23420ef619dc2cb5aebad613f4823a2fa41c07e5a1d05628d40f6ec4b35bfddd
-            x-checker-data:
-              project-id: 13149
-              type: anitya
-              url-template: https://download.gnome.org/sources/libnotify/$major.$minor/libnotify-$version.tar.xz
-
       - name: opusfile
         sources:
           - type: archive
