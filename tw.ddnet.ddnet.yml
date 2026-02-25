@@ -1,6 +1,6 @@
 id: tw.ddnet.ddnet
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -27,7 +27,7 @@ modules:
     build-options:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
-        CARGO_NET_OFFLINE: 'true'
+        CARGO_NET_OFFLINE: "true"
         CARGO_HOME: /run/build/ddnet/cargo
     config-opts:
       - -GNinja
@@ -38,7 +38,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '19.7'
+        tag: "19.7"
         commit: cc0ba8caad2df9be8c50ff37ca6868b9a0e0680f
         disable-submodules: true
         disable-fsckobjects: true # https://github.com/ddnet/ddnet/issues/2196
@@ -65,16 +65,6 @@ modules:
       - shared-modules/glew/glew.json
 
       - shared-modules/glu/glu-9.json
-
-      - name: opusfile
-        sources:
-          - type: archive
-            url: https://downloads.xiph.org/releases/opus/opusfile-0.12.tar.gz
-            sha256: 118d8601c12dd6a44f52423e68ca9083cc9f2bfe72da7a8c1acb22a80ae3550b
-            x-checker-data:
-              type: anitya
-              project-id: 10353
-              url-template: https://downloads.xiph.org/releases/opus/opusfile-$version.tar.gz
 
       - name: x264
         config-opts:
