@@ -1,6 +1,6 @@
 id: tw.ddnet.ddnet
 runtime: org.freedesktop.Platform
-runtime-version: "25.08"
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -27,7 +27,7 @@ modules:
     build-options:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
-        CARGO_NET_OFFLINE: "true"
+        CARGO_NET_OFFLINE: 'true'
         CARGO_HOME: /run/build/ddnet/cargo
     config-opts:
       - -GNinja
@@ -38,8 +38,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: "19.7"
-        commit: cc0ba8caad2df9be8c50ff37ca6868b9a0e0680f
+        tag: '19.8'
+        commit: c8c3a7904d076449054b51976c4a56bd382e85ab
         disable-submodules: true
         disable-fsckobjects: true # https://github.com/ddnet/ddnet/issues/2196
         x-checker-data:
