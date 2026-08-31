@@ -38,8 +38,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '19.9'
-        commit: e5ebaeaad935abc65cf0470a1701877fa258856b
+        tag: '20.0'
+        commit: a5a61806e434ef22141b622db989087fbba8ed21
         disable-submodules: true
         disable-fsckobjects: true # https://github.com/ddnet/ddnet/issues/2196
         x-checker-data:
