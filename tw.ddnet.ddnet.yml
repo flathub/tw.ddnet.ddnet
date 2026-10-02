@@ -24,6 +24,7 @@ cleanup:
 modules:
   - name: ddnet
     buildsystem: cmake-ninja
+    builddir: true
     build-options:
       append-path: /usr/lib/sdk/rust-stable/bin
       env:
