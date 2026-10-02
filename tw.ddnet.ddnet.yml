@@ -35,7 +35,7 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DAUTOUPDATE=OFF
     post-install:
-      - install -Dm 644 -t /app/share/metainfo tw.ddnet.ddnet.metainfo.xml
+      - install -Dm 644 -t /app/share/metainfo ../tw.ddnet.ddnet.metainfo.xml
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
