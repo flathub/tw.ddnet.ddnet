@@ -39,8 +39,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/ddnet/ddnet.git
-        tag: '20.1'
-        commit: c9d208138f85755521f16a0096b6fe036c5c8698
+        tag: 20.1.1
+        commit: 647a2db7e3581c1deb45ff5dd877a41278a22798
         disable-submodules: true
         disable-fsckobjects: true # https://github.com/ddnet/ddnet/issues/2196
         x-checker-data:
@@ -81,15 +81,15 @@ modules:
         sources:
           - type: git
             url: https://github.com/KhronosGroup/SPIRV-Tools.git
-            tag: vulkan-sdk-1.4.357.0
-            commit: 9a49b0883b9b635689a85b5647dbfcb223268151
+            tag: vulkan-sdk-1.4.363.0
+            commit: ef96ed763b43b59b33b31b362f09a02b729fa1c9
             x-checker-data:
               type: git
               tag-pattern: ^vulkan-sdk-([\d.]+)$
           - type: git
             url: https://github.com/KhronosGroup/SPIRV-Headers.git
-            tag: vulkan-sdk-1.4.357.0
-            commit: 29981f65241605e08b0ede4cfeb999fe3b723c6a
+            tag: vulkan-sdk-1.4.363.0
+            commit: 496543121ce6419f23d6fa5d7194ba66c36212d2
             dest: external/spirv-headers
             x-checker-data:
               type: git
